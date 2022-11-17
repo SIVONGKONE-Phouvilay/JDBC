@@ -20,7 +20,7 @@ public class ConnectSQL {
     }
     public static void capNhat(Statement stmt, String id, String thuonghieu, String price) throws SQLException{
         System.out.println("\nDa cap nhat du lieu co id: " + id);
-        String update = "UPDATE loai SET price = '"+price+"', thuonghieu = "+thuonghieu+" WHERE id = "+id;
+        String update = "UPDATE loai SET price = '"+price+"', thuonghieu = '"+thuonghieu+"' WHERE id = "+id;
         stmt.executeUpdate(update);
         lietKe(stmt);
     }
